@@ -1,0 +1,20 @@
+<div <?php echo $this->attributes; ?>>
+	<div class="modal-dialog<?php echo $this->size; ?>">
+		<div class="modal-content">
+			<?php if($this->title || $this->closeButton): ?>
+			<div class="modal-header">
+				<?php echo $this->closeButton; ?>
+				<?php echo $this->title; ?>
+			</div>
+			<?php endif; ?>
+			<div class="modal-body">
+				<?php echo $this->content; ?>
+			</div>
+			<?php if($this->footer): ?>
+			<div class="modal-footer">
+				<?php echo $this->footer; ?>
+			</div>
+			<?php endif; ?>
+		</div>
+	</div>
+</div>

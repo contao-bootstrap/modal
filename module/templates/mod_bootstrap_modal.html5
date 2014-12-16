@@ -1,0 +1,28 @@
+<!-- indexer::stop -->
+<?php if(!$this->hideFrame): ?>
+<div <?php echo $this->attributes; ?>>
+	<div class="modal-dialog<?php echo $this->size; ?>">
+		<div class="modal-content">
+<?php endif; ?>
+<?php if(!$this->hideContent): ?>
+			<div class="modal-header">
+				<?php echo $this->closeButton; ?>
+				<?php echo $this->title; ?>
+			</div>
+
+			<div class="modal-body">
+				<?php echo $this->content; ?>
+			</div>
+
+			<?php if($this->footer): ?>
+			<div class="modal-footer">
+				<?php echo $this->footer; ?>
+			</div>
+<?php endif; ?>
+<?php endif; ?>
+		</div>
+	</div>
+<?php if(!$this->hideFrame): ?>
+</div>
+<?php endif; ?>
+<!-- indexer::continue -->
