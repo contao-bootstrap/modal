@@ -3,7 +3,7 @@
 return array(
     'config' => array(
         'types' => array(
-            'modal' => 'Netzmacht\Bootstrap\Modal\ConfigModalType',
+            'modal' => 'Netzmacht\Bootstrap\Modal\Config\ModalType',
         ),
     ),
 
@@ -11,6 +11,7 @@ return array(
         'dismiss'    => '<span aria-hidden="true">&times;</span>',
         'adjustForm' => true,
     ),
+
     'templates'  => array(
         'parsers' => array(
             'callback_replace-classes' => array(
