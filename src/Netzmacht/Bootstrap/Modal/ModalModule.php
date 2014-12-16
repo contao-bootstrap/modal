@@ -4,9 +4,9 @@
 namespace Netzmacht\Bootstrap\Modal;
 
 use Module;
-use Netzmacht\Bootstrap\Components\Button\Factory;
-use Netzmacht\Bootstrap\Components\Button\Group;
-use Netzmacht\Bootstrap\Components\Button\Toolbar;
+use Netzmacht\Bootstrap\Buttons\Factory;
+use Netzmacht\Bootstrap\Buttons\Group;
+use Netzmacht\Bootstrap\Buttons\Toolbar;
 use Netzmacht\Bootstrap\Modal\Modal as Component;
 use Netzmacht\Bootstrap\Core\Bootstrap;
 use Netzmacht\Bootstrap\Core\Config;

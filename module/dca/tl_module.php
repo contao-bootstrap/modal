@@ -32,11 +32,6 @@ $GLOBALS['TL_DCA']['tl_module']['metasubpalettes']['bootstrap_addModalFooter'] =
     'bootstrap_buttons',
 );
 
-$GLOBALS['TL_DCA']['tl_module']['metasubpalettes']['bootstrap_addCloseButton'] = array
-(
-    'bootstrap_closeButton',
-);
-
 $GLOBALS['TL_DCA']['tl_module']['fields']['html']['eval']['tl_class'] = 'clr long';
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['bootstrap_addModalFooter'] = array
