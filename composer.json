@@ -14,9 +14,9 @@
     ],
     "support":{
         "email":"mail@netzmacht.de",
-        "issues":"https://github.com/contao-bootstrap/components/issues",
+        "issues":"https://github.com/contao-bootstrap/modal/issues",
         "wiki":"http://contao-bootstrap.netzmacht.de",
-        "source":"https://github.com/contao-bootstrap/components"
+        "source":"https://github.com/contao-bootstrap/modal"
     },
     "require":{
         "php":">=5.3.4",
@@ -24,11 +24,11 @@
         "contao/core":">=3.2,<3.5-dev",
         "contao-bootstrap/core": "~1.0",
         "contao-bootstrap/buttons": "~1.0",
-        "bit3/contao-meta-palettes":"~1.4",
+        "contao-community-alliance/meta-palettes":"~1.4",
         "menatwork/contao-multicolumnwizard":"~3.2"
     },
     "require-dev": {
-        "netzmacht/contao-build-tools": "1.0.x-dev"
+        "netzmacht/contao-build-tools": "~1.1"
     },
     "conflict": {
         "netzmacht/contao-bootstrap": "*",
@@ -36,7 +36,7 @@
         "contao-bootstrap/components": "~1.0"
     },
     "autoload": {
-        "psr-0": { "Netzmacht\\Bootstrap\\Modal\\": "src/" }
+        "psr-0": { "Netzmacht\\Bootstrap\\Modal": "src/" }
     },
     "extra":{
         "contao": {
