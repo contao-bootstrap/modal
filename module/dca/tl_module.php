@@ -87,7 +87,7 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['bootstrap_module'] = array
     'label'            => &$GLOBALS['TL_LANG']['tl_module']['bootstrap_module'],
     'exclude'          => true,
     'inputType'        => 'select',
-    'options_callback' => array('Netzmacht\Bootstrap\Modal\Dca\Module', 'getAllModules'),
+    'options_callback' => array('Netzmacht\Bootstrap\Core\Contao\DataContainer\Module', 'getAllModules'),
     'eval'             => array('chosen' => true, 'tl_class' => 'w50'),
     'sql'              => "int(10) unsigned NOT NULL default '0'"
 );
@@ -97,7 +97,7 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['bootstrap_article'] = array
     'label'            => &$GLOBALS['TL_LANG']['tl_module']['bootstrap_article'],
     'exclude'          => true,
     'inputType'        => 'select',
-    'options_callback' => array('Netzmacht\Bootstrap\Modal\Dca\Module', 'getAllArticles'),
+    'options_callback' => array('Netzmacht\Bootstrap\Core\Contao\DataContainer\Module', 'getAllArticles'),
     'eval'             => array('chosen' => true, 'tl_class' => 'w50'),
     'sql'              => "int(10) unsigned NOT NULL default '0'"
 );
