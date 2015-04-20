@@ -382,9 +382,9 @@ class Subscriber implements EventSubscriberInterface
                 $cssId  = deserialize($model->cssID, true);
                 $cssId  = '#' . ($cssId[0] != '' ? $cssId[0] : 'modal-' . $model->id);
                 $buffer = sprintf(
-                    '<a href="%s" data-toggle="modal" data-remote="%s">%s</a>',
-                    $cssId,
+                    '<a href="%s" data-toggle="modal" data-target="%s">%s</a>',
                     $buffer,
+                    $cssId,
                     $params[6]
                 );
             }
