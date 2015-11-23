@@ -104,7 +104,7 @@ class Subscriber implements EventSubscriberInterface
             // create copy for footer
             /** @var Element $element */
             $copy = clone $element;
-            $copy->setAttribute('onclick', sprintf('$(\'#ctrl_%s\').click();', $widget->id));
+            $copy->setAttribute('onclick', sprintf('jQuery(\'#ctrl_%s\').click();', $widget->id));
             $copy->setId('md_' . $element->getId());
             $copy->addClass('btn');
 
