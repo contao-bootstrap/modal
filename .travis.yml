@@ -18,7 +18,12 @@ env:
 matrix:
   exclude:
     - php: "5.3"
+        env: CONTAO_VERSION=~3.3.0
+    - php: "5.3"
       env: CONTAO_VERSION=~3.5.0
+  allow_failure:
+    - php: "7.0"
+    - php: "nightly"
 
 sudo: false
 
@@ -28,11 +33,6 @@ install:
   - travis_retry composer update --prefer-dist --no-interaction
 
 script: ant -keep-going
-
-matrix:
-  allow_failure:
-    - php: "7.0"
-    - php: "nightly"
 
 # Hack to make things work again - we can not use a shallow repository.
 git:
