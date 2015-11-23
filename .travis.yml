@@ -29,7 +29,8 @@ install:
 
 script: ant -keep-going
 
-allow_failure:
+matrix:
+  allow_failure:
     - php: "7.0"
     - php: "nightly"
 
