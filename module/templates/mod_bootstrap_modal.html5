@@ -14,10 +14,10 @@
         <?php echo $this->content; ?>
       </div>
 
-      <?php if($this->footer): ?>
-      <div class="modal-footer">
-        <?php echo $this->footer; ?>
-      </div>
+    <?php if(($footer = (string) $this->footer)): ?>
+    <div class="modal-footer">
+        <?php echo $footer; ?>
+    </div>
 <?php endif; ?>
 <?php endif; ?>
     </div>

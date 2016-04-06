@@ -10,9 +10,9 @@
       <div class="modal-body">
         <?php echo $this->content; ?>
       </div>
-      <?php if($this->footer): ?>
+      <?php if(($footer = (string) $this->footer)): ?>
       <div class="modal-footer">
-        <?php echo $this->footer; ?>
+        <?php echo $footer; ?>
       </div>
       <?php endif; ?>
     </div>
