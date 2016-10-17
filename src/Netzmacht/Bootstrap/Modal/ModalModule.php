@@ -118,6 +118,7 @@ class ModalModule extends \Module
 
         $content = parent::generate();
         $content = $this->replaceInsertTags($content);
+        $content = $this->replaceInsertTags($content, false);
 
         // add content to TL_BODY
         if ($this->isAjax) {
