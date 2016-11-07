@@ -11,7 +11,7 @@
 $GLOBALS['FE_MOD']['miscellaneous']['bootstrap_modal'] = 'Netzmacht\Bootstrap\Modal\ModalModule';
 
 // Hooks
-$GLOBALS['TL_HOOKS']['outputFrontendPage'][] = array('Netzmacht\Bootstrap\Modal\Subscriber', 'appendModals');
+$GLOBALS['TL_HOOKS']['modifyFrontendPage'][] = array('Netzmacht\Bootstrap\Modal\Subscriber', 'appendModals');
 
 // Event Subscribers
 $GLOBALS['TL_EVENT_SUBSCRIBERS'][] = 'Netzmacht\Bootstrap\Modal\Subscriber';
