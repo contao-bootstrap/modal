@@ -61,7 +61,7 @@ class ModalModule extends \Module
             ->setSize($this->bootstrap_modalSize)
             ->setAttribute('role', 'dialog')
             ->setAttribute('aria-hidden', 'true')
-            ->setAttribute('taxindex', '-1');
+            ->setAttribute('tabindex', '-1');
 
         if ($this->cssID[1]) {
             $modal->addClass($this->cssID[1]);
