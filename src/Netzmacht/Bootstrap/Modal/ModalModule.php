@@ -162,7 +162,7 @@ class ModalModule extends \Module
                 return $buffer;
 
             case 'text':
-                return \String::toHtml5($this->bootstrap_text);
+                return \StringUtil::toHtml5($this->bootstrap_text);
 
             default:
                 return '';
