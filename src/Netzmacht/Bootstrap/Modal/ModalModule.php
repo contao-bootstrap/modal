@@ -162,7 +162,11 @@ class ModalModule extends \Module
                 return $buffer;
 
             case 'text':
-                return \String::toHtml5($this->bootstrap_text);
+                if (version_compare(VERSION . '.' . BUILD, '3.5.5', '>=')) {
+                    return \StringUtil::toHtml5($this->bootstrap_text);
+                } else {
+                    return \String::toHtml5($this->bootstrap_text);
+                }
 
             default:
                 return '';
